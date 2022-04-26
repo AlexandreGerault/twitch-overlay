@@ -4,6 +4,7 @@ import DebugAlerts from "./DebugAlerts";
 import { useSearchParams } from "react-router-dom";
 import { start } from "../PrimaryAdapters/Streamlabs";
 import { useAppDispatch } from "./hooks";
+import Webcam from "./Webcam";
 
 function App() {
   const [searchParams] = useSearchParams();
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
       {/* <DebugAlerts /> */}
+      <Webcam />
       <Alerts />
     </div>
   );

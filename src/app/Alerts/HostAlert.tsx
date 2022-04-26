@@ -6,7 +6,7 @@ interface Props {
 
 export default function HostAlert({ alert }: Props) {
   return (
-    <div className="px-6 py-4 shadow rounded">
+    <div className="px-6 py-4 shadow rounded bg-white">
       {alert.payload.host} nous héberge gracieusement
       {alert.payload.viewersAmount &&
         ` avec ${alert.payload.viewersAmount} spectateurs`}{" "}

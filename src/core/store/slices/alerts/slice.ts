@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Alert } from "../../../types/Alert";
+import { Alert } from "../../../../types/Alert";
 import { receiveAlert } from "./useCases";
 
 const initialState = [] as Alert[];

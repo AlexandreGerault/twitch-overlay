@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { AppDispatch, RootState } from "../..";
-import { Alert } from "../../../types/Alert";
+import { Alert } from "../../../../types/Alert";
 import { addAlert, hideAlert } from "./slice";
 
 const receiveAlert = createAsyncThunk<

@@ -1,6 +1,7 @@
-import { useEffect } from "react";
 import { SubscribeAlert as SubscribeAlertType } from "../../types/Alert";
 import { useAudio } from "../hooks";
+
+import subscribeAudio from "../../../assets/sounds/thank_you.wav";
 
 interface Props {
   alert: SubscribeAlertType;
@@ -19,7 +20,7 @@ function messageForMonths(cumulated: number, successive?: number | undefined) {
 }
 
 export default function SubscribeAlert({ alert }: Props) {
-  useAudio("thank_you.wav");
+  useAudio(subscribeAudio);
 
   return (
     <div className="px-6 py-4 shadow rounded bg-white">

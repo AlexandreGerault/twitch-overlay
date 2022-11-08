@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Alerts from "./Alerts";
-import DebugAlerts from "./DebugAlerts";
 import { useSearchParams } from "react-router-dom";
 import { start } from "../PrimaryAdapters/Streamlabs";
 import { useAppDispatch } from "./hooks";

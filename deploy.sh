@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# remove previous build
+rm -rf dist/
+
 # abort on errors
 set -e
 
